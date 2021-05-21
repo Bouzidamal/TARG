@@ -1,0 +1,33 @@
+<div class="card card-custom">
+      <div class="card-header"> 
+           <div class="card-title">             
+      <h3 class="card-label" >{{data.element.libelle}}</h3>     
+    </div>
+        </div>    
+  <!--begin-->  
+    <mat-dialog-content>     
+       <div class="container">   
+      <div class="card-body">                    
+        <section class="example-section">
+          <span class="example-list-section">
+            <ul>
+              <li *ngFor="let elem of data.element.data">
+                <mat-checkbox >
+                  {{elem.name}}
+                </mat-checkbox>
+              </li>
+            </ul>
+          </span>
+        </section>
+      </div>      
+         <div class="card-footer">
+          <div class="kt-portlet__foot kt-portlet__no-border kt-portlet__foot--fit text-right">
+          <div class="kt-form__actions kt-form__actions">
+            <button (click)="onNoClick()" class="btn-primary btn" type="reset">Fermer</button>                    
+          </div>  
+          
+        </div>      
+      </div>     
+    </div>  
+      </mat-dialog-content>
+</div>
