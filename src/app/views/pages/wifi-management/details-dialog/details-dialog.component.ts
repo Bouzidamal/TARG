@@ -41,7 +41,7 @@ export class DetailsDialogComponent implements OnInit {
       ])
       ],
       numero: ['', Validators.compose([
-     
+
       ])
       ],
     })
@@ -56,7 +56,7 @@ export class DetailsDialogComponent implements OnInit {
       );
       return;
     }
-    console.log(this.form.value)
+
 
 
     this.dialogRef.close({ data: this.form.value, wifi: this.data.element.libelle });

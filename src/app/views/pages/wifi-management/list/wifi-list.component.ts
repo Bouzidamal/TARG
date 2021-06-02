@@ -45,7 +45,7 @@ export class WifiListComponent implements OnInit, OnDestroy {
   wifi: any = [
     {
       id: 1,
-      libelle: "Radio",
+      libelle: "Number of Interfaces",
       data: [
 
       ],
@@ -98,8 +98,8 @@ export class WifiListComponent implements OnInit, OnDestroy {
       id: 5,
       libelle: 'Access Point',
       data: [
-        { name: 'WME' },
-        { name: 'WDS' },
+        { name: 'MAC Filtering' },
+        { name: 'Security' },
         { name: 'WPS' },
         { name: 'IDLE' },
         { name: 'band steering devices' },
